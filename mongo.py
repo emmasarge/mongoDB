@@ -21,7 +21,7 @@ conn = mongo_connect(MONGO_URI)
 
 coll = conn[DATABASE][COLLECTION]
 
-documents = coll.find()
+documents = coll.find({"first":"john"})
 
 # new_docs = [{
 #     "first": "terry",
